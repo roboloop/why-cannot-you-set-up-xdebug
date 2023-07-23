@@ -1,8 +1,10 @@
 # Why cannot you set up Xdebug?
 
+> Use issue tab for changes
+
 Most users experience difficulties with setting up [Xdebug](https://xdebug.org/) in their development environments. The problem has deteriorated due to several reasons:
 
-- Insufficient understanding of xdebug work
+- Insufficient understanding of Xdebug work
 - An overload of ambiguous and inaccurate google-answers
 - No out-of-the-box solution to run "in one click"
 

@@ -1,4 +1,4 @@
-# Setting up Xdebug
+# How does Xdebug work?
 
 <!-- toc -->
 
@@ -27,8 +27,6 @@
 <!-- tocstop -->
 
 ## Problem area
-
-> How does Xdebug work?
 
 Setting up Xdebug requires interaction with several components in the development environment — client, server, IDE. The number of components and their potential working environment lead to complications in configuration process. Understanding how Xdebug works will reduce efforts on setting Xdebug up in any development environment.
 
@@ -139,7 +137,7 @@ CLI application is run by the user. The illustration of injecting Xdebug to CLI 
 
 <img src="./img/cli_xdebug.png" alt="cli_xdebug" width="50%">
 
-The communication is similar to the [Web mode](#web-application) but with a few distinctions:
+The communication is similar to the [Web mode](#web-mode) but with a few distinctions:
 
 1. Special trigger `XDEBUG_TRIGGER` must be passed as environment variable to initialize Xdebug session.
 
