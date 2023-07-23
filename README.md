@@ -13,7 +13,7 @@ In addition, you will gain insights into the following related questions: what i
 The document is presented in two languages:
 
 - [English](./xdebug_en.md)
-- ~~[Русский](./xdebug_ru.md)~~
+- ~~[Русский](./xdebug_ru.md)~~ deprecated
 
 ### TODO List
 
