@@ -10,7 +10,7 @@ Most users experience difficulties with setting up [Xdebug](https://xdebug.org/)
 
 As long as the last two reasons are hard to affect, the focus of the article is decreasing impact of the first reason. So the goal is to explain how Xdebug does work under the hood, how IDE does work with Xdebug, and how the browser side has to work. The narrative format will help you systematize knowledge in an orderly manner. As a result, the acquired knowledge will reduce efforts on setting Xdebug up in an unfamiliar environment.
 
-In addition, you will gain insights into the following related questions: what is DBGp Proxy, why you should not use Xdebug Cloud and how to set up Xdebug in nonstandard environments (like SPA application).
+In addition, you will gain insights into the following related questions: what is DBGp Proxy, why you should not use Xdebug Cloud and how to set up Xdebug in nonstandard environments (like SPA application). You won't gain information about instructions for installing Xdebug extension, instructions for using the debugger.
 
 The document is presented in two languages:
 

@@ -21,8 +21,9 @@
   * [Xdebug Cloud](#xdebug-cloud)
 - [Troubleshooting](#troubleshooting)
   * [How to inspect a problem?](#how-to-inspect-a-problem)
-  * [Debugging a long-running application](#debugging-a-long-running-application)
+  * [Debugging a CLI-application](#debugging-a-cli-application)
   * [Debugging an SPA-application](#debugging-an-spa-application)
+  * [Debugging in other environments](#debugging-in-other-environments)
 
 <!-- tocstop -->
 
@@ -356,15 +357,8 @@ If Xdebug does not connect to an IDE, follow this checklist to inspect a problem
    - Enable logging in `xdebug.ini`:
 
       ```ini
-      xdebug.log = /var/log/xdebug.log
+      xdebug.log = /tmp/xdebug.log
       ```
-
-   - Set the correct permissions to the log file:
-
-     ```shell
-     touch /var/log/xdebug.log
-     chmod 666 /var/log/xdebug.log
-     ```
 
 4. Inspect log file of PhpStorm:
 
@@ -372,21 +366,17 @@ If Xdebug does not connect to an IDE, follow this checklist to inspect a problem
    - Add line and save: `#com.jetbrains.php`
    - Checkout the log file: **Help** / **Show Log in Finder/Explorer/Navigator**
 
-### Debugging a long-running application
+### Debugging a CLI-application
 
-A long-running application could produce workers that has to be debugged. For that case:
+That approach even works with an application that could produce workers that need to be debugged. Just add the trigger mark and don't forget to set the right client's address in the config:
 
-1. Add this line near with the inspected code:
+```shell
+XDEBUG_TRIGGER=1 php artisan horizon
+```
 
-   ```php
-   xdebug_connect_to_client();
-   ```
+There is an easier way to do it. PhpStorm solves that problem, so all you need is to add PHP script in the `Run` / `Edit configurations` and start debugging:
 
-2. Run a long-running application with disabled option:
-
-   ```shell
-   php -d xdebug.start_with_request=no artisan horizon
-   ```
+<img src="./img/ide_cli_run.png" alt="ide_cli_run" width="50%">
 
 ### Debugging an SPA-application
 
@@ -418,3 +408,9 @@ Now all request with `/api` prefix will be proxied to the backend. `XDEBUG_TRIGG
 2. Copy like `copy as cURL`.
 3. Paste it in the terminal and add to the end `-H 'Cookie: XDEBUG_TRIGGER=1`.
 4. Send the request.
+
+### Debugging in other environments
+
+Check out [Ultimate Guide](https://www.jetbrains.com/help/phpstorm/debugging-with-phpstorm-ultimate-guide.html) from JetBrains. There are a few cases of debugging in nonstandard environments (like via SSH tunnel).
+
+Also, more solutions to the real problems can be found there.
