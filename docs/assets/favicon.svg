@@ -1,0 +1,35 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203 203" width="64" height="64">
+	<title>Xdebug_Logo-svg</title>
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: #317e1e;stroke: #ffffff;stroke-width: 5 } 
+		.s1 { fill: none;stroke: #ffffff;stroke-width: 4 } 
+		.s2 { fill: none;stroke: #ffffff;stroke-linecap: square;stroke-linejoin: round;stroke-width: 4 } 
+		.s3 { fill: none;stroke: #ffffff;stroke-linejoin: round;stroke-width: 4 } 
+		.t4 { font-size: 260px;fill: #ff0000;font-weight: 700;font-family: "DejaVuSansMono-Bold", "DejaVu Sans Mono" } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<path id="Layer" class="s0" d="m131.9 101.5l68.2 70.7 0.4 17.3h-38.6l-60.8-59.7-60 59.7h-39v-17.6l69.7-69.8-69.6-71.2v-17.4h38.7l60.2 60 61-60h38.3v16z"/>
+			<path id="Layer" class="s1" d="m79.9 94.1c-1.9 0-3.5-1.6-3.5-3.5 0-1.9 1.6-3.5 3.5-3.5 1.9 0 3.5 1.6 3.5 3.5 0 1.9-1.6 3.5-3.5 3.5z"/>
+			<path id="Layer" class="s1" d="m109.1 104.5c-1.9 0-3.5-1.6-3.5-3.5 0-1.9 1.6-3.5 3.5-3.5 1.9 0 3.5 1.6 3.5 3.5 0 1.9-1.6 3.5-3.5 3.5z"/>
+			<path id="Layer" class="s1" d="m162.4 34.5c-1.9 0-3.5-1.6-3.5-3.5 0-1.9 1.6-3.5 3.5-3.5 1.9 0 3.5 1.6 3.5 3.5 0 1.9-1.6 3.5-3.5 3.5z"/>
+			<path id="Layer" class="s1" d="m54.9 159.5c-1.9 0-3.5-1.6-3.5-3.5 0-1.9 1.6-3.5 3.5-3.5 1.9 0 3.5 1.6 3.5 3.5 0 1.9-1.6 3.5-3.5 3.5z"/>
+			<path id="Layer" class="s1" d="m184.4 178c-1.9 0-3.5-1.6-3.5-3.5 0-1.9 1.6-3.5 3.5-3.5 1.9 0 3.5 1.6 3.5 3.5 0 1.9-1.6 3.5-3.5 3.5z"/>
+			<path id="Layer" class="s2" d="m36.6 174.2l9.4-9.2"/>
+			<path id="Layer" class="s2" d="m108.3 85.1l49.4-49.4"/>
+			<path id="Layer" class="s3" d="m106.3 98.7l-72-72.7h-19.1"/>
+			<path id="Layer" class="s3" d="m171.4 26h15.6"/>
+			<path id="Layer" class="s3" d="m15.2 176.7l79.2-78"/>
+			<path id="Layer" class="s3" d="m120.3 90.6l64.7-64.6"/>
+			<path id="Layer" class="s3" d="m24.7 35.7l52.7 52.6"/>
+			<path id="Layer" class="s3" d="m120.3 112.7l32 32"/>
+			<path id="Layer" class="s3" d="m159.2 149.6l22.1 22"/>
+			<path id="Layer" class="s3" d="m57.6 153.5l43.4-42.6 67.1 66.6h4.9"/>
+		</g>
+	</g>
+	<text id="?" style="transform: matrix(1,0,0,1,77.898,190.356)" >
+		<tspan x="0" y="0" class="t4">?</tspan><tspan  y="0" class="t4">
+</tspan>
+	</text>
+</svg>
