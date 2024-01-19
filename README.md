@@ -7,4 +7,3 @@ The article is [here](https://paulradley.github.com/why-cannot-you-set-up-xdebug
 - WSL2 environment
 - SEO TAGS
 - Google Analytics
-- set a CI 
