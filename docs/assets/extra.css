@@ -1,0 +1,14 @@
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 0;
+  border-left-width: 4px;
+  font-size: .75rem;
+}
+
+.md-typeset table:not([class]) {
+    border-top: 0
+}
+
+.md-typeset th {
+  display: none;
+}
