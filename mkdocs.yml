@@ -1,0 +1,34 @@
+site_name: Why cannot you set up Xdebug?
+site_author: Paul Radley
+site_description: Personal Blog
+site_dir: build
+site_url: https://paulradley.github.com/why-cannot-you-set-up-xdebug
+repo_url: https://github.com/paulradley/why-cannot-you-set-up-xdebug
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - toc.follow
+
+plugins:
+  - git-revision-date-localized
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+
+extra_css:
+  - assets/extra.css
+
+nav:
+  - Why cannot you set up Xdebug?: index.md
