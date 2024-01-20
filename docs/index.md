@@ -1,6 +1,7 @@
 ---
 hide:
   - navigation
+comments: true
 ---
 
 # Why cannot you set up Xdebug?
