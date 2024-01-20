@@ -14,6 +14,18 @@ theme:
     repo: fontawesome/brands/github
   features:
     - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/eye
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/eye-outline
+        name: Switch to light mode
 
 plugins:
   - git-revision-date-localized
