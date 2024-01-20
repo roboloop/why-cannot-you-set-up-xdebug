@@ -7,7 +7,6 @@ repo_url: https://github.com/paulradley/why-cannot-you-set-up-xdebug
 
 theme:
   name: material
-  custom_dir: overrides
   favicon: assets/favicon.svg
   icon:
     repo: fontawesome/brands/github
@@ -35,7 +34,7 @@ extra_css:
 extra:
   generator: false
   analytics:
-    provider: custom
+    provider: google
     property: !ENV GOOGLE_ANALYTIC
 
 nav:
