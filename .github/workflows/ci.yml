@@ -2,10 +2,8 @@ name: Build and Deploy MkDocs
 
 on:
   push:
-    branches:
-      - $default-branch
-
-    workflow_dispatch:
+    branches: ['*']
+#      - $default-branch
 
 permissions:
   contents: read
