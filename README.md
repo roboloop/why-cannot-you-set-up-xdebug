@@ -1,6 +1,6 @@
 # Why cannot you set up Xdebug?
 
-The article is [here](https://paulradley.github.com/why-cannot-you-set-up-xdebug)
+The article is [here](https://roboloop.github.io/why-cannot-you-set-up-xdebug/)
 
 ### TODO List
 
