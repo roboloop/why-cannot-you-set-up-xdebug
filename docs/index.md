@@ -7,7 +7,7 @@ hide:
 
 ## Abstract
 
-Most users experience hardships with setting up [Xdebug](https://xdebug.org/) in their development environments. This problem has deteriorated for two reasons:
+Most users experience hardships with setting up [Xdebug](https://xdebug.org/){:target="_blank"} in their development environments. This problem has deteriorated for two reasons:
 
 - Insufficient understanding of Xdebug work
 - An overload of ambiguous and inaccurate google-answers
@@ -77,7 +77,7 @@ The HTTP request must contain a special trigger to initialize the Xdebug session
 - Query param
 - Post payload
 
-A popular browser extension [Xdebug Helper](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc?hl=en) uses the Cookie approach to transfer that trigger.
+A popular browser extension [Xdebug Helper](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc?hl=en){:target="_blank"} uses the Cookie approach to transfer that trigger.
 
 !!! note ""
 
@@ -117,7 +117,7 @@ xdebug.client_port = 9003
 
 #### The communication with the client
 
-[DBGp](https://xdebug.org/docs/dbgp) protocol aims to form communication between the Xdebug extension and the IDE. As a result, the familiar features like breakpoints, stacktrace, variable inspection are worked in the IDE.
+[DBGp](https://xdebug.org/docs/dbgp){:target="_blank"} protocol aims to form communication between the Xdebug extension and the IDE. As a result, the familiar features like breakpoints, stacktrace, variable inspection are worked in the IDE.
 
 At that step, the interactive debugging process has started for the client.
 
@@ -193,7 +193,7 @@ As a result, created `Server` will be used for automatic routing and correct fil
 
 #### Visual Studio Code integration
 
-The popular [PHP Debug Adapter](https://github.com/xdebug/vscode-php-debug) for Visual Studio Code brings all usual debugging processes and file mapping via `pathMappings` setting in the configuration`launch.json`, except for working with multiple projects.
+The popular [PHP Debug Adapter](https://github.com/xdebug/vscode-php-debug){:target="_blank"} for Visual Studio Code brings all usual debugging processes and file mapping via `pathMappings` setting in the configuration`launch.json`, except for working with multiple projects.
 
 The current solution assumes that only one project at a time can listen to Xdebug connections. For that reason, a user has to manually change a project that will be debugged.
 
@@ -211,7 +211,7 @@ The proxy allows the establishment of the connection from the debugger to the ID
 
 ### DBGp Proxy Tool
 
-[DBGp Proxy Tool](https://xdebug.org/docs/dbgpProxy) is a utility that runs on a node. It provides two features: partially coping with [NAT](https://en.wikipedia.org/wiki/Network_address_translation) and allowing multiple users to debug an application simultaneously (on a shared stage, for example).
+[DBGp Proxy Tool](https://xdebug.org/docs/dbgpProxy){:target="_blank"} is a utility that runs on a node. It provides two features: partially coping with [NAT](https://en.wikipedia.org/wiki/Network_address_translation){:target="_blank"} and allowing multiple users to debug an application simultaneously (on a shared stage, for example).
 
 <img src="./img/dbgp_proxy_tool.webp" alt="Schema of DBGp Proxy Tool" width="50%">
 
@@ -253,7 +253,7 @@ When the setup is completed, DBGp Proxy Tool will route the Xdebug session to th
 
 ### Xdebug Cloud
 
-[Xdebug Cloud](https://xdebug.cloud/) is a commercial product. It simplifies significantly the installing process. Moreover, it affords to establish the Xdebug session between nodes behind NAT and firewalls. Multi-user usage is also supported.
+[Xdebug Cloud](https://xdebug.cloud/){:target="_blank"} is a commercial product. It simplifies significantly the installing process. Moreover, it affords to establish the Xdebug session between nodes behind NAT and firewalls. Multi-user usage is also supported.
 
 <img src="./img/xdebug_cloud.webp" alt="Schema of Xdebug Cloud" width="50%">
 
@@ -277,7 +277,7 @@ That's it. This is the easiest way to set up Xdebug in any environment! But...
 
 !!! danger "Be aware!"
 
-    The connection between the PHP engine and Xdebug Cloud is not secured. The DBGp protocol allows to execute any PHP code. So, in case of [man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack), an attacker can gain a full access to your system ([issue link](https://github.com/xdebug/xdebug/pull/646)).
+    The connection between the PHP engine and Xdebug Cloud is not secured. The DBGp protocol allows to execute any PHP code. So, in case of [man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack){:target="_blank"}, an attacker can gain a full access to your system ([issue link](https://github.com/xdebug/xdebug/pull/646){:target="_blank"}).
 
     For that reason use Xdebug Cloud at your own risk!
 
@@ -383,9 +383,9 @@ As a result, you can run CLI scripts with debugging, execute tests with execute,
 
 ### Debugging an SPA-application
 
-Mostly, backend and frontend applications are located at different addresses. In that case, the browser extension [Xdebug Helper](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc) doesn't send the debugging trigger to the backend. The main solution is to use the same domain for both applications.
+Mostly, backend and frontend applications are located at different addresses. In that case, the browser extension [Xdebug Helper](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc){:target="_blank"} doesn't send the debugging trigger to the backend. The main solution is to use the same domain for both applications.
 
-1. Edit the configuration file of the frontend application's web-server. If [webpack](https://webpack.js.org/) is used, then modify `webpack.config.js`:
+1. Edit the configuration file of the frontend application's web-server. If [webpack](https://webpack.js.org/){:target="_blank"} is used, then modify `webpack.config.js`:
 
     ```javascript
     module.exports = {
@@ -407,6 +407,6 @@ Now, all request with the `/api` prefix will be proxied to the backend. the `XDE
 
 ### Debugging in other environments
 
-Check out [Ultimate Guide](https://www.jetbrains.com/help/phpstorm/debugging-with-phpstorm-ultimate-guide.html) from JetBrains. There are a few cases of debugging in nonstandard environments (like via SSH tunnel). Also, you can find more solutions to real problems there.
+Check out [Ultimate Guide](https://www.jetbrains.com/help/phpstorm/debugging-with-phpstorm-ultimate-guide.html){:target="_blank"} from JetBrains. There are a few cases of debugging in nonstandard environments (like via SSH tunnel). Also, you can find more solutions to real problems there.
 
-Check out [Step Debugging](https://xdebug.org/docs/step_debug) on the official Xdebug website.
+Check out [Step Debugging](https://xdebug.org/docs/step_debug){:target="_blank"} on the official Xdebug website.
