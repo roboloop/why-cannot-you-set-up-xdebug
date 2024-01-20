@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GOOGLE_ANALYTIC: ${{ secrets.GOOGLE_ANALYTIC }}
+      GOOGLE_HTML_TAG: ${{ secrets.GOOGLE_HTML_TAG }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
